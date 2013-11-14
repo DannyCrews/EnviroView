@@ -14,33 +14,39 @@
       </ul>
       
       <!-- Main Banner Image - place in a paragraph to enforce the modular scale spacing -->
-      <p><img src="assets/sky.jpg" /></p>
+     
+      <p></p>
     </div>
 
   </div>
   
   <!-- End Nav and Banner -->
+  <div class="row">
+    <div id="chart">
+      <iframe width="500" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?containerId=gviz_canvas&amp;q=select+col5%2C+SUM(col13)+from+15WraChgipVanaxsmhOM5jDQapZ3huBE_JFGZ7EA+where+col11+%3D+2012+group+by+col5+order+by+SUM(col13)+asc+limit+50&amp;viz=GVIZ&amp;t=COLUMN&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;att=true&amp;width=500&amp;height=285"></iframe>
+    </div>
 
-  <div id="googft-mapCanvas" class="row"></div>
-  <input id="googft-legend-open" style="display:none" type="button" value="Legend"></input>
-  <div id="googft-legend">
-    <p id="googft-legend-title">Greenhouse Gas Quantity</p>
-    <div>
-      <img class="googft-dot-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAiklEQVR42mNgQIAoIF4NxGegdCCSHAMzEC81M4v6n56++n9V1RkwbWgY+B8oPhOmKM3WNu3/zJn/MbCFRSxIYSxI0YHi4gNYFRUW7gUp2gtS9LC9/SFWRc3Nt0GKbhNtUizIbmyKjIxCQIpCYI6fD/JdVtZGsO8yMtbBfDeNAQ2AwmkjNJzWIYcTAMk+i9OhipcQAAAAAElFTkSuQmCC"/>
-      <span class="googft-legend-range">0 to 500,000</span>
+    <div id="googft-mapCanvas"></div>
+    <input id="googft-legend-open" style="display:none" type="button" value="Legend"></input>
+    <div id="googft-legend">
+      <p id="googft-legend-title">Greenhouse Gas Quantity</p>
+      <div>
+        <img class="googft-dot-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAiklEQVR42mNgQIAoIF4NxGegdCCSHAMzEC81M4v6n56++n9V1RkwbWgY+B8oPhOmKM3WNu3/zJn/MbCFRSxIYSxI0YHi4gNYFRUW7gUp2gtS9LC9/SFWRc3Nt0GKbhNtUizIbmyKjIxCQIpCYI6fD/JdVtZGsO8yMtbBfDeNAQ2AwmkjNJzWIYcTAMk+i9OhipcQAAAAAElFTkSuQmCC"/>
+        <span class="googft-legend-range">0 to 500,000</span>
+      </div>
+      <div>
+        <img class="googft-dot-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAi0lEQVR42mNgQIAoIF4NxGegdCCSHAMzEC+NijL7v3p1+v8zZ6rAdGCg4X+g+EyYorS0NNv////PxMCxsRYghbEgRQcOHCjGqmjv3kKQor0gRQ8fPmzHquj27WaQottEmxQLshubopAQI5CiEJjj54N8t3FjFth369ZlwHw3jQENgMJpIzSc1iGHEwB8p5qDBbsHtAAAAABJRU5ErkJggg=="/>
+        <span class="googft-legend-range">500,000 to 1,000,000</span>
+      </div>
+      <div>
+        <img class="googft-dot-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAiklEQVR42mNgQIAoIF4NxGegdCCSHAMzEC+NUlH5v9rF5f+ZoCAwHaig8B8oPhOmKC1NU/P//7Q0DByrqgpSGAtSdOCAry9WRXt9fECK9oIUPXwYFYVV0e2ICJCi20SbFAuyG5uiECUlkKIQmOPng3y30d0d7Lt1bm4w301jQAOgcNoIDad1yOEEAFm9fSv/VqtJAAAAAElFTkSuQmCC"/>
+        <span class="googft-legend-range">1,000,000 to 22,800,875.9</span>
+      </div>
+      <div class="googft-legend-source">
+        <a href="data?docid=15WraChgipVanaxsmhOM5jDQapZ3huBE_JFGZ7EA" target="_blank">Source</a>
+      </div>
+      <input id="googft-legend-close" style="display:none" type="button" value="Hide"></input>
     </div>
-    <div>
-      <img class="googft-dot-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAi0lEQVR42mNgQIAoIF4NxGegdCCSHAMzEC+NijL7v3p1+v8zZ6rAdGCg4X+g+EyYorS0NNv////PxMCxsRYghbEgRQcOHCjGqmjv3kKQor0gRQ8fPmzHquj27WaQottEmxQLshubopAQI5CiEJjj54N8t3FjFth369ZlwHw3jQENgMJpIzSc1iGHEwB8p5qDBbsHtAAAAABJRU5ErkJggg=="/>
-      <span class="googft-legend-range">500,000 to 1,000,000</span>
-    </div>
-    <div>
-      <img class="googft-dot-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAiklEQVR42mNgQIAoIF4NxGegdCCSHAMzEC+NUlH5v9rF5f+ZoCAwHaig8B8oPhOmKC1NU/P//7Q0DByrqgpSGAtSdOCAry9WRXt9fECK9oIUPXwYFYVV0e2ICJCi20SbFAuyG5uiECUlkKIQmOPng3y30d0d7Lt1bm4w301jQAOgcNoIDad1yOEEAFm9fSv/VqtJAAAAAElFTkSuQmCC"/>
-      <span class="googft-legend-range">1,000,000 to 22,800,875.9</span>
-    </div>
-    <div class="googft-legend-source">
-      <a href="data?docid=15WraChgipVanaxsmhOM5jDQapZ3huBE_JFGZ7EA" target="_blank">Source</a>
-    </div>
-    <input id="googft-legend-close" style="display:none" type="button" value="Hide"></input>
   </div>
 
   <!-- Main Content Section -->
