@@ -12,8 +12,8 @@
     mapDiv.style.width = isMobile ? '100%' : '500px';
     mapDiv.style.height = isMobile ? '100%' : '300px';
     var map = new google.maps.Map(mapDiv, {
-      center: new google.maps.LatLng(41.72996159574916, -83.77842710261586),
-      zoom: 4,
+      center: new google.maps.LatLng(39.043484377218164, -96.81998062248562),
+      zoom: 3,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
     map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(document.getElementById('googft-legend-open'));
@@ -52,5 +52,3 @@
   }
 
   google.maps.event.addDomListener(window, 'load', initialize);
-
-
