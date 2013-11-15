@@ -1,4 +1,4 @@
-A joint project with Dan Crews (github.com/dannycrews) and Matt Clement (github.com/darkmoves) in General Assembly's Web Development Immersive program.  
+A joint project with Dan Crews (https://github.com/dannycrews) and Matt Clement (https://github.com/darkmoves) in General Assembly's Web Development Immersive program.  
 
 This is the second draft of https://github.com/DannyCrews/api_lab and contains https://github.com/abigezunt/heatmap.
 
