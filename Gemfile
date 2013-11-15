@@ -17,6 +17,8 @@ gem 'compass-rails', '~> 2.0.alpha.0'
 
 gem 'zurb-foundation'
 
+gem 'rails_12factor', group: :production
+
 gem 'pry-rails'
 
 gem 'dotenv-rails'
