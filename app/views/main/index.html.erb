@@ -1,67 +1,44 @@
 
-  <!-- Nav and Banner -->
-  
-  <div class="row">
-    <div class="large-12 columns">
-      <ul class="button-group">
-        <li><a href="#" class="button">Link 1</a></li>
-        <li><a href="#" class="button">Link 2</a></li>
-        <li><a href="#" class="button">Link 3</a></li>
-        <li><a href="#" class="button">Link 4</a></li>
-        <li><a href="#" class="button">Link 5</a></li>
-        <li><a href="#" class="button">Link 6</a></li>
-        <li><a href="#" class="button">Link 7</a></li>
-      </ul>
-      
-      <!-- Main Banner Image - place in a paragraph to enforce the modular scale spacing -->
-     
-      <div id="banner"><h2>EnviroView</h2></div>
-    </div>
+<!-- Nav and Banner -->
+
+<div class="row">
+  <div class="large-12 columns">
+    <!-- Main Banner Image - place in a paragraph to enforce the modular scale spacing -->
+    <p><div id="banner"><h3>EnviroView</h3></div></p>
   </div>
+
+</div>  
+<!-- End Nav and Banner -->
+
+<ul class="large-block-grid-2">
+
+  <li>
+    <%= render 'chart' %>
+  </li>
+
+  <li>
+    <div id="leaflet-map"></div>
+  </li>
+
+  <li>
+    <%= render 'googlemap' %>
+  </li>
+
   
-  <!-- End Nav and Banner -->
-    <div>
-    
-      <%= render 'chart' %>
-
-      <div id="leaflet-map"></div>
-   
-      <%= render 'googlemap' %>
-
-    </div>
-  <!-- Main Content Section -->
-  
-  <div class="row">
-
-    <div class="large-8 columns">
+  <li>
+    <div class="legislation">
       <h4>Green House Gases Legislation</h4>
-      <div class="legislation"
       <% @bills.results.each do |result| %>
-      <p><strong><%= result.bill_id %>: </strong><%= result.official_title %></p>
+      <p><strong><%= result.bill_id %>:</strong><%= result.official_title %></p>
       <% end %>
     </div>
-    <p><a href="#" class="secondary small button">Next Page &rarr;</a></p>
-  </div>
+  </li>
 
-  <div class="large-4 columns">
-
-    <!-- Gallery sidebar with a block grid. Note: block grid items should be the same size for optimal results -->
-
-    <ul class="small-block-grid-3">
-      <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-      <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-      <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-      <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-      <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-      <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-    </ul>
-  </div>
-
-</div>
+</ul>
 
 
 <!-- Call to Action Panel -->
-<div class="row">
+<!-- <div class="row">
   <div class="large-12 columns">
 
     <div class="panel">
@@ -77,7 +54,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 
 <!-- Footer -->
@@ -89,28 +66,17 @@
       <div class="large-6 columns">
         <p>&copy; Abby, Matt and Dan</p>
       </div>
-      <div class="large-6 columns">
-        <ul class="inline-list right">
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-          <li><a href="#">Link 4</a></li>
-          <li><a href="#">Link 5</a></li>
-          <li><a href="#">Link 6</a></li>
-          <li><a href="#">Link 7</a></li>
-        </ul>
-      </div>
     </div>
   </div> 
 </footer>
 
-  <script>
+<script>
   document.write('<script src=' +
-  ('__proto__' in {} ? 'assets/js/vendor/zepto' : 'js/vendor/jquery') +
-  '.js><\/script>')
-  </script>
-  
-  <script src="assets/js/foundation.min.js"></script>
+    ('__proto__' in {} ? 'assets/js/vendor/zepto' : 'js/vendor/jquery') +
+    '.js><\/script>')
+</script>
+
+<script src="assets/js/foundation.min.js"></script>
   <!--
   
   <script src="js/foundation/foundation.js"></script>
@@ -145,9 +111,9 @@
   
   <script src="js/foundation/foundation.abide.js"></script>
   
-  -->
-  
-  <script>
-    $(document).foundation();
-  </script>
+-->
+
+<script>
+  $(document).foundation();
+</script>
 
