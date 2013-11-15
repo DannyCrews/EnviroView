@@ -19,9 +19,18 @@ body {
   background-color:#cccccc;
 }
 
-#leaflet-map {
-  height: 400px;
+#chart {
+  display: inline-block;
 }
+
+#leaflet-map {
+  display: inline-block;
+}
+
+#googft-mapCanvas {
+  display: inline-block;
+}
+
 
 .info {
   padding: 6px 8px;
@@ -43,16 +52,6 @@ body {
   border: 2px solid blue;
   background-color: green;
   text-align: center;
-}
-
-
-#googft-mapCanvas {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; 
-  height: 500px;
-  padding: 20px;
-  width: 800px;
 }
 
 #googft-legend    {
