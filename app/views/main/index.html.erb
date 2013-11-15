@@ -1,41 +1,46 @@
 
 <!-- Nav and Banner -->
 
-<div class="row">
-  <div class="large-12 columns">
-    <!-- Main Banner Image - place in a paragraph to enforce the modular scale spacing -->
-    <p><div id="banner"><h3>EnviroView</h3></div></p>
-  </div>
 
-</div>  
+    <!-- Main Banner Image - place in a paragraph to enforce the modular scale spacing -->
+    <div class="panel callout title" id="banner"><h1>EnviroView</h1></div>
+
+
+ 
 <!-- End Nav and Banner -->
 
-<ul class="large-block-grid-2">
+<ul class="large-block-grid-1">
 
-  <li>
+  <li class="panel">
+    <div class="title"><h2>Total Greenhouse Gas Emissions by State in 2012</h2></div>
     <%= render 'chart' %>
   </li>
 
-  <li>
-    <div id="leaflet-map"></div>
+  <li class="panel">
+    <div class="title"><h2>Mentions of the phrase "greenhouse gas" by legislators</h2></div>
+    <div id="leaflet-map" class='visualization'></div>
   </li>
 
-  <li>
+  <li class="panel">
+   <div class="title"><h2>EPA data about greenhouse gas emitters</h2></div>
     <%= render 'googlemap' %>
   </li>
 
   
-  <li>
-    <div class="legislation">
-      <h4>Green House Gases Legislation</h4>
-      <% @bills.results.each do |result| %>
-      <p><strong><%= result.bill_id %>:</strong><%= result.official_title %></p>
-      <% end %>
-    </div>
+  <li class="panel">
+   <div class="title"><h2>Breakdown of fuel used for electricity by state</h2></div>
   </li>
 
 </ul>
 
+<div class='panel'>    
+  <div class="legislation">
+    <h4>Proposed Legislation about Greenhouse Gases:</h4>
+    <% @bills.results.each do |result| %>
+    <p><strong><%= link_to result.bill_id, result.urls['opencongress'] %>: </strong>introduced on <%= result.introduced_on %>: <%= result.official_title %></p>
+    <% end %>
+  </div>
+</div>
 
 <!-- Call to Action Panel -->
 <!-- <div class="row">
@@ -61,12 +66,7 @@
 
 <footer class="row">
   <div class="large-12 columns">
-    <hr />
-    <div class="row">
-      <div class="large-6 columns">
-        <p>&copy; Abby, Matt and Dan</p>
-      </div>
-    </div>
+        <p><a href="https://generalassemb.ly/education/web-development-immersive"><img src="http://ga.bling.phillbaker.com/images/shield_imagined_ga_wdi.png" alt="wdi" /></a> by <%= link_to 'Abby Howell', 'http://www.linkedin/in/abbyhowell' %>, <%= link_to 'Matt Clement', 'http://twitter.com/darkmoves' %>, and <%= link_to 'Dan Crews', 'http://www.linkedin.com/in/danielcrews' %>   </p>
   </div> 
 </footer>
 

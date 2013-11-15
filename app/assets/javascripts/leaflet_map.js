@@ -12,7 +12,7 @@ ready = function() {
 
 	Leaflet.tileLayer('http://{s}.tile.cloudmade.com/{key}/{styleId}/256/{z}/{x}/{y}.png', {
 		key: '9b1a5bc7509a4b88b3f1e34008ac37a4',
-		attribution: ' | map tiles by CloudMade | built by Abby Howell in General Assembly\'s Web Development Immersive.',
+		attribution: ' | map tiles by CloudMade',
 		styleId: 22677
 	}).addTo(map);
 
